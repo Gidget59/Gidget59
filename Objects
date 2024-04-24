@@ -1,0 +1,21 @@
+Object- groups of things that you want to relate
+
+//build a store manager character
+
+var storeManager = {}
+storeManager.rangeTilesPerTurn = 4;
+storeManager.socialSkills = 50;
+sotreManager.streetSmarts = 50;
+storeManager.health = 30;
+storeManager.specialAbility = "finding business opportunities";
+storeManager.greeting ="Let's make some money";
+
+variable name=property key
+variable value=property value
+
+//build Assistant Manager
+var assistantManager = {
+  movement: 3,
+  socialSkills: 30,
+  streetSmarts: 30,
+  health: 40

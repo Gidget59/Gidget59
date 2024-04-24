@@ -1,0 +1,42 @@
+var house2 = {};
+house2["rooms"] = 4;
+house2['color']= "pink";
+house2["priceUSD] =12345;
+console.log(house2); // {rooms: 4, color: 'pink', priceUSD: 12345}
+
+var car = {};
+car.color ="red";
+car["color"] = "green";
+car["speed"] = 200;
+car.speed = 100;
+console.log(car);// {color: "green", speed:100}
+
+
+//* when using bracket notation you can use space characters & also add numbers inside property names
+//examples
+
+//space characters:
+car["number of doors"] = 4;
+console.log(car); 
+
+//numbers:
+car["2022"] = 1901;
+console.log(car);
+
+//*using number strings for a property key is discouraged because it doesn't convey a lot of useful info.
+
+//* bracket notation is better for evaluating expressions, dot notation not so much
+var arrOfKeys = ['speed', 'altitude', 'color'};
+var drone = {
+  speed: 100,
+  altitutde: 200,
+  color: "red"
+}
+for (var i = 0; i < arrOfKeys.length; i++) {
+  console.log(drone{arrOfKeys[i]])
+}
+
+//output
+100
+200
+red

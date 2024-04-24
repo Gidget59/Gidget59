@@ -1,0 +1,53 @@
+var user = {};//create an object
+
+//creating an object with properites and their values
+var assistantManager = {
+rangeTilesPerTurn: 3,
+socailSkills: 30,
+streetSmarts: 30,
+health:40,
+specialAbility: "young and ambitious",
+greeting: "Let's make some money"
+}
+
+//example: table object
+var table = {
+legs: 3,
+color: "brown"
+priceUSD: 100,
+}
+
+//to access table object
+console.log(table);
+
+//output
+{legs: 3, color: 'brown', priceUSD: 100}
+
+//to find any individual property
+console.log(table.color);//'brown'
+
+var house= {
+  rooms: 3,
+  color: "brown",
+  priceUSD: 10000,
+}
+
+//alt approach to build is to 
+//1. Save an empty object literal to a variable
+//2. use dot notation to declare new properties
+//3. use assignment operator to add values to the properties
+
+var house2 ={};
+  house2.rooms =4;
+  house2.color ="pink";
+  house2.priceUSD = 12345;
+
+//using the 2 approaches
+console.log(house); // {rooms: 3, color: "brown", priceUSD: 10000}
+house.windows = 10;
+console.log(house); // {rooms: 3, color: "brown", priceUSD: 10000, windows: 10}
+
+//flexibility: you can update already existing properties (not just add new ones)
+house.windows = 11;
+console.log(house); // {rooms: 3, color: "brown", priceUSD: 10000, windows: 11}
+

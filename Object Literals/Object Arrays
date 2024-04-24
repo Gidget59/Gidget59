@@ -1,0 +1,36 @@
+//Push Method ()
+
+var fruits =[];
+fruits.push("apple"); //['apple']
+fruits.push('pear')//['apple', 'pear']
+
+//if you want to remove the last item from the array use the pop method.
+
+//Pop Method() 
+
+fruits.pop();
+console.log(fruits); //['apple']
+
+//example of building a function that pushes items into an array
+function arrayBuilder(one, two, three) {
+  var arr ={};
+  arr.push(one)
+  arr.push(two)
+  arr.push(three);
+  console.log(arr);
+
+arrayBuilder('apple', 'pear', 'plum');// ['apple', 'pear', 'plum']
+
+function arrayBuilder(one, two, three) {
+    var arr = [];
+    arr.push(one);
+    arr.push(two);
+    arr.push(three);
+    return arr;
+}
+
+//you can rename it anything
+var simpleArr = arrayBuilder('apple', 'pear', 'plum');
+
+//Then console.log values stored
+console.log(simpleArr); // ['apple','pear','plum']

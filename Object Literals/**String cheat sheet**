@@ -1,0 +1,31 @@
+//Most Common & Useful properties & methods available for strings
+
+//starts with understanding these basic variables
+var greet ="Hello";
+var place ="World"
+
+for clarity, instead of using variable name, we will use the string itself.
+
+//*length property
+greet.length;//7
+
+*//charAT() method- to read each individual character at a specific index in a string (starts at 0)
+greet.charAt(0); //'H'
+
+//*concat() method- joins 2 strings
+"Wo".concat("rl").concat("d");//'World'
+
+//*indexOf()-returns the location of the 1st position that matches a character
+"ho-ho-ho".indexOf('h'); // 0
+"ho-ho-ho".indexOf('o'); // 1
+"ho-ho-ho".indexOf('-'); // 2
+
+//*lastIndexOf()-finds the last match, otherwise it works the same as indexOf
+//*split method: chops up the string into an array of sub-strings:
+"ho-ho-ho".split("-"); // ['ho', 'ho', 'ho']
+
+//*methods to change the casing of strings--to UpperCase()_toLowerCase()
+greet.toUpperCase(); // "HELLO, "
+greet.toLowerCase(); // "hello, "
+
+
